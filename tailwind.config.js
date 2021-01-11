@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
@@ -5,7 +7,10 @@ module.exports = {
   },
   purge: ['src/**/*.html'],
   theme: {
-    extend: {},
+    extend: {
+      teal: colors.teal,
+      orange: colors.orange,
+    },
   },
   variants: {
     backgroundOpacity: ['responsive', 'even', 'odd', 'hover', 'focus'],
